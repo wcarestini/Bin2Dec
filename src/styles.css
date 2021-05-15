@@ -29,6 +29,7 @@ input:focus, select:focus, button:focus {
 .title {
     color: var(--color-green-first);
     font-size: 48px;
+    text-shadow: 2px 2px var(--color-black-first);
 }
 
 .description {
