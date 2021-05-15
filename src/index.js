@@ -17,7 +17,7 @@ function convertBinaryToDecimal(event) {
         decimal += Math.pow(base, index) * bit
     })
 
-    alert(binary, decimal)
+    result(binary, decimal)
 }
 
 function isBinary(number) {
@@ -33,6 +33,12 @@ function isBinary(number) {
 
 function result(binary, decimal) {
     const modal = document.querySelector('.modal')
+
+    const binaryField = document.querySelector('.result-binary')
+    const decimalField = document.querySelector('.result-decimal')
+
+    binaryField.innerHTML = binary
+    decimalField.innerHTML = decimal
 
     modal.style.display = 'flex'
     document.body.style.overflow = 'hidden'
