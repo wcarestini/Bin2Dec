@@ -17,7 +17,7 @@ function convertBinaryToDecimal(event) {
         decimal += Math.pow(base, index) * bit
     })
 
-    alert(decimal)
+    alert(binary, decimal)
 }
 
 function isBinary(number) {
@@ -29,4 +29,18 @@ function isBinary(number) {
     }
 
     return true
+}
+
+function result(binary, decimal) {
+    const modal = document.querySelector('.modal')
+
+    modal.style.display = 'flex'
+    document.body.style.overflow = 'hidden'
+}
+
+function closeModal() {
+    const modal = document.querySelector('.modal')
+
+    modal.style.display = 'none'
+    document.body.style.overflow = 'auto'
 }

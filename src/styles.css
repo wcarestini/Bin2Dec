@@ -77,3 +77,58 @@ input:focus, select:focus, button:focus {
     color: var(--color-black-first);
     font-family: 'Press Start 2P', cursive;
 }
+
+.modal {
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background-color: var(--color-black-second);
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    padding-top: 2%;
+    border: 8px solid var(--color-black-first);
+    border-radius: 6.5px;
+}
+
+.result-container {
+    margin-top: 5%;
+    background-color: var(--color-black-first);
+    width: 90%;
+    height: 250px;
+    padding: 5%;
+    border-radius: 3.5px;
+    box-shadow: 2px 2px 0 var(--color-black-first);
+}
+
+.exit {
+    color: var(--color-black-first);
+    font-size: 30px;
+}
+
+@keyframes cursor {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.cursor {
+    -webkit-animation: cursor 1s linear infinite;
+    -moz-animation: cursor 1s linear infinite;
+    -ms-animation: cursor 1s linear infinite;
+    -o-animation: cursor 1s linear infinite;
+    animation: cursor 1s linear infinite;
+}
+
+.green {
+    color: var(--color-green-first);
+}
