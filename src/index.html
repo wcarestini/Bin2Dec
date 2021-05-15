@@ -19,9 +19,9 @@
         <form class="form-container">
             <label class="form-label">Insert a binary number:</label>
 
-            <input class="form-input" placeholder="000000"></input>
+            <input type="text" minlength="1" maxlength="8" class="form-input" placeholder="000000"></input>
 
-            <button class="form-button" onclick="">Convert</button>
+            <button class="form-button" onclick="convertBinaryToDecimal(event)">Convert</button>
         </form>
 
     </div>
