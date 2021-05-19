@@ -14,5 +14,5 @@ A funcionalidade principal é fazer a conversão de um número binário para dec
 
 ## Layout
 
-**Web**
+### **Web**
 ![layout web da aplicação](https://github.com/wcarestini/Bin2Dec/blob/main/assets/layout-web.gif?raw=true)
